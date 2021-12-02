@@ -1,0 +1,9 @@
+.page-flex {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 120px);
+}
+.page-container {
+  width: calc(100vw - 250px);
+  background-color: rgb(201, 191, 191);
+}

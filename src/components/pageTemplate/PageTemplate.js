@@ -3,13 +3,17 @@ import PropTypes from "prop-types";
 import Header from "components/header/Header";
 import Footer from "components/footer/Footer";
 import SideBar from "components/sideBar/SideBar";
+import "assets/styles/main.scss";
 
 const PageTemplate = ({ children }) => {
   return (
     <div className="PageTemplate">
       <Header />
-      <SideBar />
-      {children}
+      <div className="page-flex">
+        <SideBar />
+        <div className="page-container">{children}</div>
+      </div>
+
       <Footer />
     </div>
   );
